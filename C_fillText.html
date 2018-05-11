@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C_fillText</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #ccc"></canvas>
+    <canvas id="myCanvas1" width="200" height="100" style="border: 1px solid #ccc"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var apps = c.getContext("2d");
+        apps.font = "30px Arial";
+        apps.fillText("Hello Dev", 10,50);
+    </script>
+     <script>
+            var c = document.getElementById("myCanvas1");
+            var apps = c.getContext("2d");
+            apps.font = "30px Arial";
+            apps.strokeText("Hello Dev", 10,50);
+        </script>
+</body>
+</html>
